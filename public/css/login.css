@@ -1,0 +1,42 @@
+
+section.login{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: px solid rgba(197, 202, 206, 0.5);
+    background-color: rgb(197, 202, 206);
+    width: 70%;
+    margin: 5px 0;
+}
+label{
+    margin-bottom: 5px;
+}
+form.form-container{
+    padding: 20px 15px;
+}
+input{
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+div.campo-form{
+    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn-form{
+    background-color: blue ;
+    border: none;
+    font-size: 20px ;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+

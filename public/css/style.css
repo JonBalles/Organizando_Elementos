@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* Variables */
+
+:root {
+   
+   
+   /* Variables de colores */
+
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+
+    /* Fuentes */
+   
+    --fuente: 'Roboto', sans-serif; 
+
+    /* Tamaños tipograficos */
+
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px; 
+
+
+}
+
+/* Generales */
+
+* {
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--grisClaro);
+}
+
+/* Header */
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+    width: 100%;   
+}
+header .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+header section.main section{
+    width: 100%;
+}
+
+header div.logo {
+    width: 50%;
+    padding: 0 5px;
+    justify-content: center;
+}
+
+
+header div.busqueda {
+    display: flex;
+    width: 50%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+header div.busqueda input{
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    border-color: #FFF;
+}
+header div.busqueda button{
+    width: 30px;
+    height: 32px;
+    border-radius: 5px;
+    border-color: #FFF;
+}
+
+header nav{
+    display: none;
+}
+
+header p {
+    margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+    font-size: var(--parrafos);
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+header div.burger-menu{
+    
+
+  
+    color: white;
+    background-color: var(--celeste);
+    text-align: center; 
+    display: inline-block;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 50% 0;
+    
+    
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+main div img.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+section.seccionProductos article{
+    display: flex;
+    border: 1px solid #d8d0d0;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0 5px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    border-top: #d8d0d0 3px solid;
+    padding: 15px;
+    width: 250px;
+    position: relative;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+}
+
+section.seccionProductos article:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+section.seccionProductos article img {
+    height: 200px;
+    width: 100%;
+    border-bottom: #666 1px solid;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 65px;
+    transition: all 1s;
+   }
+
+main section article:hover i{
+    rotate: -90deg;
+}
+
+main section article .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    opacity: 0.1;
+    transition: all 1s;
+}
+
+main section article:hover .details{
+    opacity: 1; 
+}
+
+main section article .details div.precio{
+    width: 30%;
+    margin-right: 10px;
+
+}
+main section article .details div.descuento{
+    width: 70%;
+   
+}
+
+   
+section.seccionProductos article div.descuento{
+    color: #39b54a;
+
+
+
+}
+
+
+section.seccionProductos article div.descuento i{
+    border: #39b54a 1px solid;
+    border-radius: 50% ;
+    padding: 5px;
+    margin: 5px 0;
+}
+/* FIN MAIN */
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+}
+
+footer article{
+    text-align: center;
+    margin-bottom: 50px;
+  
+}
+
+footer article i{
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+footer span{
+    font-size: var(--parrafos);
+}
+
+
+@media (min-width: 420px){
+
+    /* --- HEADER --- */
+    header div.burger-menu{
+        display: none;
+    }
+
+   
+   header {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   }
+   header .main{
+    flex-direction: row;
+   }
+   header section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+
+   header section.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   header section.main section{
+    width: 65%;
+}
+header section.main p {
+    width: 100%;
+}
+   header section .logo {
+    width: 250px;
+   }
+   header section .busqueda {
+    width: 300px;
+    height: 30px;
+   }
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+   
+       
+    header p#subtitulo{
+        text-align: center;
+        padding-left: 5px;
+    }
+    
+    header nav ul#listaSuperior{
+    
+        margin-bottom: 15px;
+    }
+    
+    header nav ul li a{
+    font-size: var(--parrafos);
+    }
+    
+    /* --- FIN HEADER */
+
+    /* --- MAIN --- */
+    
+    section.seccionProductos{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    /* --- FIN MAIN --- */
+}
+
+
+@media (min-width:1024px){
+
+    header {
+        padding: 10px 0;
+    }
+    header section.main{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+     
+       }
+       header section.main section {
+        width:70%;
+        flex-direction: row;
+       }
+       header section.main section div.busqueda{
+        width: 60%;
+       
+       }
+       header section.main section div.logo {
+        width: 40%;
+       }
+
+
+       header section.main p{
+        width: 30%
+       }
+
+       header nav{
+        width: 100%;
+       }
+
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+}
+header nav ul li{
+    margin: 0 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+}
+#copyright{
+    display: flex;
+    justify-content: start;
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer article i:hover{
+    color: #39b54a;
+}
+}

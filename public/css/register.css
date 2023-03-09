@@ -1,0 +1,84 @@
+section.register{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: px solid rgba(197, 202, 206, 0.5);
+    background-color: rgb(197, 202, 206);
+    width: 70%;
+    margin: 5px 0;
+}
+
+input:focus:invalid ~ .error::after{
+    content: "Campo obligatorio";
+    color: red
+}
+
+form{
+    padding: 20px 15px;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+div.campo-form{
+    margin-bottom: 15px;
+}
+
+
+div.campo-form input{
+    display: block;
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
+div.tipoDeCuenta{
+    display: flex;
+}
+
+input.vend-comp{
+    width: 50%;
+}
+
+/* CheckBox */
+
+#check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#check div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#check div input{
+    width: 20%;
+}
+#check div span{
+    width: 50%;
+}
+
+
+.btn-form{
+    background-color: blue ;
+    border: none;
+    font-size: 20px ;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}

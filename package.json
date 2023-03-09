@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "35---estructura-de-un-sitio-web",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonBalles/disenioAdaptativo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonBalles/disenioAdaptativo/issues"
+  },
+  "homepage": "https://github.com/JonBalles/disenioAdaptativo#readme",
+  "description": ""
+}
